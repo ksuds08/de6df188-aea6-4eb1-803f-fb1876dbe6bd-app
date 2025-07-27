@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResumeCraft AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-xKuk1pETm19euOiVwxTI9Zv5.png?st=2025-07-27T13%3A20%3A12Z&se=2025-07-27T15%3A20%3A12Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-27T14%3A20%3A12Z&ske=2025-07-28T14%3A20%3A12Z&sks=b&skv=2024-08-04&sig=Fh1NFzHcgX5aK6KDKyvPOUAdlHWRHDyPx%2BguYvX4VB4%3D" alt="ResumeCraft AI Logo" class="h-12">
+      <h1 class="text-lg font-bold">ResumeCraft AI</h1>
+      <p class="text-sm font-light">Crafting Your Career, One Resume at a Time</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto my-8 p-4 bg-white shadow-md rounded">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4">Create Your Professional Resume</h2>
+    <form id="resumeForm" class="space-y-6">
+      <div>
+        <label for="jobRole" class="block text-sm font-medium text-gray-700">Job Role</label>
+        <input type="text" id="jobRole" name="jobRole" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" required>
+      </div>
+      <div>
+        <label for="experience" class="block text-sm font-medium text-gray-700">Experience</label>
+        <textarea id="experience" name="experience" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" required></textarea>
+      </div>
+      <button type="submit" class="bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-300">Generate Resume</button>
+    </form>
+
+    <section id="resumeSuggestions" class="mt-8 hidden">
+      <h3 class="text-xl font-semibold text-blue-900 mb-4">AI Suggestions</h3>
+      <div id="suggestionsContent" class="p-4 bg-gray-50 rounded shadow-inner">
+        <!-- AI suggestions will be populated here -->
+      </div>
+      <button id="downloadResume" class="mt-4 bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-300 hidden">Download Resume</button>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 mt-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 ResumeCraft AI. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
